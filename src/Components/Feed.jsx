@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Stack, Box, Typography } from '@mui/material'
-import { borderRight } from '@mui/system'
+import SideBar from './Sidebar'
 
 function Feed() {
   return (
@@ -8,7 +8,10 @@ function Feed() {
       flexDirection: { sx: 'column', md: 'row' }
     }}>
       <Box sx={{ height: { sx: 'auto', md: '92vh' }, borderRight: '1px solid #3d3d3d', px: { sx: 0, md: 2 } }}>
-
+        <SideBar />
+        <Typography className='copyright' variant='body2' sx={{ mt: 1.5, color: '#fff' }}>
+          Copyright 2023 YouTube.
+        </Typography>
       </Box>
     </Stack >
   )
